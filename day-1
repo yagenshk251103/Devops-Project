@@ -1,0 +1,28 @@
+# DevOps Project Work 1
+
+## 📌 Task: Temporary User Setup with Expiry
+
+---
+
+## 👤 User Details
+- Username: `yagnesh`
+- Expiry Date: `2027-02-12`
+
+---
+
+## ⚙️ Step 1: Create User with Expiry Date
+
+```bash
+sudo useradd -m -e 2027-02-12 yagnesh
+
+sudo passwd yagnesh
+
+
+📖 Explanation
+-m → Create home directory /home/yagnesh
+-e → Set account expiry date
+⚠️ Important Notes
+Date format must be: YYYY-MM-DD
+After expiry date:
+User cannot log in
+Account is disabled (not deleted)
